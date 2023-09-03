@@ -57,3 +57,31 @@ html,body{
     font-weight: 700;
     
 }
+
+#pbtm{
+    flex-wrap: wrap;
+    display: flex;  
+    padding: 20px;  
+    width: 100%;
+    height: calc(100% - 100px);
+    gap: 10px;
+    
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 90, 45);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+   
+}
+
+.bubble:hover{
+      background-color: darkgreen;
+      cursor: pointer;
+}
