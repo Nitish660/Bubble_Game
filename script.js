@@ -28,7 +28,8 @@ function runTimer() {
       }
       else{
           clearInterval(timerint);
-          document.querySelector("#pbmt")=`<h2>Game Over>`
+          document.querySelector("#pbtm").innerHTML = "<h2>Game Over</h2>";
+
       }
     },1000);
 }
@@ -40,8 +41,13 @@ function getNewHit(){
 
 document.querySelector("#pbtm")
 .addEventListener("click",function(dets){
-     
-
+   var clickednum=  (Number(dets.target.textContent));
+    if(hitrn ==clickednum){
+        increaseScore();
+        MakeBubble();
+        runTimer();
+        getNewHit();
+    }
 })
 
 

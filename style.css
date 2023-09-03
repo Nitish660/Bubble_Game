@@ -60,7 +60,9 @@ html,body{
 
 #pbtm{
     flex-wrap: wrap;
-    display: flex;  
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
     padding: 20px;  
     width: 100%;
     height: calc(100% - 100px);
@@ -84,4 +86,24 @@ html,body{
 .bubble:hover{
       background-color: rgb(52, 145, 52);
       cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #ptop {
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+
+    .elem {
+        gap: 10px; /* Reduce gap between elements for smaller screens */
+    }
+
+    #pbtm {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .bubble {
+        width: 40px; /* Reduce bubble size for smaller screens */
+        height: 40px;
+        font-size: 14px; /* Adjust font size */
+    }
 }
