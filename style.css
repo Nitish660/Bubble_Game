@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 html,body{
     width: 100%;
     height: 100%;
+  
 }
 
 #main{
@@ -25,4 +27,33 @@ html,body{
     height: 80%;
     background-color: white;
     border-radius: 10px ;
+    
+}
+
+#ptop{
+    display: flex;
+    padding: 0px 30%;
+    color: aliceblue;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(67, 110, 67);
+    justify-content: space-between;
+}
+
+.elem{
+   
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   
+}
+
+.box{
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: rgb(45, 101, 50);
+    font-weight: 700;
+    
 }
